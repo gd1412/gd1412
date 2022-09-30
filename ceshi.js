@@ -5,19 +5,18 @@
 QuantumultX:
 
 [rewrite_local]
-https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js
-
+user url script-response-body https://raw.githubusercontent.com/gd1412/gd1412/main/ceshi.js
 [mitm]
-hostname = pan.baidu.com
+hostname = iservice.10010.com
 
 ***************************
 Surge4 or Loon:
 
 [Script]
-http-response https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js
+http-response https://iservice.10010.com/e3/static/query/order.+ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/gd1412/gd1412/main/ceshi.js
 
 [MITM]
-hostname = pan.baidu.com
+hostname = iservice.10010.com
 
 **************************/
 
